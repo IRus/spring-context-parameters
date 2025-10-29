@@ -1,6 +1,6 @@
 plugins {
-	kotlin("jvm") version "2.2.20"
-	kotlin("plugin.spring") version "2.2.20"
+	kotlin("jvm") version "2.3.0-Beta2"
+	kotlin("plugin.spring") version "2.3.0-Beta2"
 	id("org.springframework.boot") version "4.0.0-RC1"
 	id("io.spring.dependency-management") version "1.1.7"
 }
@@ -11,7 +11,7 @@ description = "Demo project for Spring Boot"
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(24)
+		languageVersion = JavaLanguageVersion.of(25)
 	}
 }
 
@@ -30,7 +30,11 @@ dependencies {
 
 kotlin {
 	compilerOptions {
-		freeCompilerArgs.addAll("-Xjsr305=strict", "-Xannotation-default-target=param-property")
+		freeCompilerArgs.addAll(
+			"-Xjsr305=strict",
+			"-Xannotation-default-target=param-property",
+			"-Xcontext-parameters",
+		)
 	}
 }
 

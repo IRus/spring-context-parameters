@@ -1,4 +1,4 @@
-package kotlin.context.parameters.demo
+package spring.context.parameters.demo
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

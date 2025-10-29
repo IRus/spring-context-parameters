@@ -1,4 +1,4 @@
-package kotlin.context.parameters.demo
+package spring.context.parameters.demo
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
